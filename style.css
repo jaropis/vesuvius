@@ -1,0 +1,44 @@
+.png_channels_component .png_overlay {
+    height: 1600px;
+    width: 1600px;
+    background: white;
+}
+
+.img0 {
+    position: absolute;
+    top: 30;
+    left: 0;
+    /* opacity: 0.5 */
+}
+
+.img1 {
+    position: absolute;
+    top: 30;
+    left: 0;
+    /* opacity: 0.1 */
+}
+
+.img2 {
+    position: absolute;
+    top: 30;
+    left: 0;
+    /* opacity: 0.1 */
+}
+
+.img3 {
+    position: absolute;
+    top: 30;
+    left: 0;
+    /* opacity: 0.1 */
+}
+
+.img4 {
+    position: absolute;
+    top: 30;
+    left: 0;
+    /* opacity: 0.1 */
+}
+
+div {
+    display: block;
+}

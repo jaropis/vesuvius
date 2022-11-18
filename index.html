@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/merge-images@2.0.0/dist/index.umd.js"></script>
+    <script src="app.js"></script>
+    <title>OPS Viewer</title>
+</head>
+
+<body>
+    <div>
+        <input type="range" id="brightness_0" name="brightness_0" min="100" max="300">
+        <label for="brightness">Brightness 1</label>
+    </div>
+    <div>
+        <input type="range" id="brightness_1" name="brightness_1" min="100" max="300">
+        <label for="brightness">Brightness</label>
+    </div>
+    <div class="png_overlay" style="height: 2700px; width: 2000px;">
+        <img class="img4" data-channel="4" draggable="false"
+            src="https://magma.wi.mit.edu/vesuvius/vesuvius_montages/BRF2//BRF2.interphase-montage-4.png"
+            style="height: 2700px; width: 2000px; z-index:1; filter: brightness(100%) contrast(100%) sepia(1) hue-rotate(0deg) saturate(0); transform: translate(0px, 0px) scale(1, 1);">
+
+        <img class="img0" data-channel="0" draggable="false" src="assets/BRF2.interphase-montage-0_1.png"
+            style="height: 2700px; width: 2000px; z-index:3; filter: brightness(200%) opacity(0.7) contrast(100%) sepia(1) hue-rotate(180deg) saturate(4); transform: translate(0px, 0px) scale(1, 1); background: transparent">
+
+        <img class="img1" data-channel="1" draggable="false" src="assets/BRF2.interphase-montage-1_1.png"
+            style="height: 2700px; width: 2000px; z-index:2; filter: brightness(200%) opacity(0.7) contrast(100%) sepia(1) hue-rotate(70deg) saturate(4); transform: translate(0px, 0px) scale(1, 1); background: transparent">
+        <!-- <img class="img2" data-channel="2" draggable="false"
+            src="https://magma.wi.mit.edu/vesuvius/vesuvius_montages/BRF2//BRF2.interphase-montage-2.png"
+            style="height: 2700px; width: 2000px; filter: brightness(200%) contrast(100%) sepia(1) hue-rotate(0deg) saturate(4); transform: translate(0px, 0px) scale(1, 1); background: transparent">
+
+        <img class="img3" data-channel="3" draggable="false"
+            src="https://magma.wi.mit.edu/vesuvius/vesuvius_montages/BRF2//BRF2.interphase-montage-3.png"
+            style="height: 2700px; width: 2000px; filter: brightness(200%) contrast(100%) sepia(1) hue-rotate(10deg) saturate(4); transform: translate(0px, 0px) scale(1, 1); background: transparent"> -->
+
+    </div>
+    <img />
+</body>
+
+</html>
